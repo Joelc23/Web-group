@@ -1,0 +1,51 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header Styles */
+header {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* List Styles */
+.list-group-item {
+  background-color: #f9f9f9;
+  border: none;
+  margin-bottom: 5px;
+}
+
+/* Right Column Image */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Section Styles */
+section {
+  background-color: #e9f7ef;
+  border: 1px solid #d4edda;
+  border-radius: 5px;
+}
+
+/* Footer Styles */
+footer {
+  background-color: #f8f9fa;
+  padding: 10px 0;
+  color: #6c757d;
+}
+
+/* Styling for Key Points List */
+.list-group-item p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 5px 0 0;
+}
+.list-group-item strong {
+  font-size: 1rem;
+  color: #333;
+}

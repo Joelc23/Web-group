@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Action - Homepage</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<body>
+  <!-- HEADER/NAVIGATION -->
+  <header class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Climate Action</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">In Ireland</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Rest of World</a></li>
+          <li class="nav-item"><a class="nav-link" href="donations.html">Donations</a></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <!-- MAIN CONTENT -->
+  <main class="container mt-4">
+    <div class="row">
+      <!-- Left Column -->
+      <div class="col-md-4">
+        <ul class="list-group">
+          <li class="list-group-item">
+         <strong>What is Climate Action?</strong> 
+          <p>Climate action refers to efforts taken to combat climate change and its impacts. These efforts involve reducing greenhouse gas emissions (climate mitigation) and/or taking action to prepare for and adjust to both the current effects of climate change and the predicted impacts in the future (climate adaptation).</p>
+        </li>
+          <li class="list-group-item">
+        <strong>The Climate Action Plan 2024</strong> 
+          <p>The purpose of the Climate Action Plan is to lay out a roadmap of actions which will ultimately lead us to meeting our national climate objective of pursuing and achieving, by no later than the end of the year 2050, the transition to a climate resilient, biodiversity rich, environmentally sustainable and climate neutral economy.
+          </p>
+        </li>
+          <li class="list-group-item">
+          <strong>Main goal of Climate Action.</strong>
+          <p>The main goal of Climate Action is to combat climate change and its impacts. Climate change is now affecting every country on every continent. It is disrupting national economies and affecting lives, costing people, communities and countries dearly today and even more tomorrow.</p>
+        </li>
+          <li class="list-group-item">
+          <strong>The 3 pillars of Climate Action</strong>
+          <p>The 3 pillars of Climate Action are <strong>Mitigation</strong><strong>, Adaptation</strong> and <strong>Means of Implementation</strong>. Adaptation are all the actions taken to manage the risks of climate change impacts, and mitigation is all the actions taken to reduce the emissions that cause climate change. Each pillar has various issues and policies that show the ways climate action affects our daily lives.</p></li>
+          <li class="list-group-item">
+          <strong>What can we do to fight climate change</strong>
+          <p>There are many things you can do to fight climate change in our world.
+          1. Learn more about your carbon emissions.</p>
+          <p>
+          2.Drive more efficiently.
+          </p>
+          <p>
+          3.Use public transport more frequently.
+          </p>
+          <p>
+          4. Switch to energy efficient household appliances.
+          </p>
+        </li>
+        </ul>
+      </div>
+
+      <!--center-->
+      <div class="col-md-8">
+        <img src="climate1.jpg" alt="Climate Action Image" class="img-fluid mb-3">
+        <p>
+          Welcome to our website on Climate Action. Our goal is to spread awareness and to educate you on climate change in our country, Ireland and around the world. 
+          We hope through this you will learn more about climate action and how you can contribute towards one of the most important issues of our life times.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bottom Section -->
+    <section class="mt-4 p-3 border">
+      <p>
+        Together, we can make a difference. Explore our blogs, join the movement, 
+        and help us create a sustainable future.
+      </p>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="text-center mt-4">
+    <p>&copy; 2024 Climate Action. All rights reserved.</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  <script>
+// Random Tip Display
+// Array of tips about climate action
+const tips = [
+  "Reduce, reuse, and recycle to minimize waste.",
+  "Save energy by turning off lights and electronics.",
+  "Plant a tree to absorb CO2 and improve air quality.",
+  "Use public transport or cycle to reduce emissions.",
+  "Conserve water by fixing leaks and using less."
+];
+
+// Function to display a random tip in the footer
+function displayRandomTip() {
+  const footer = document.querySelector("footer");
+  const tip = tips[Math.floor(Math.random() * tips.length)];
+  
+  // Create a new paragraph for the tip
+  const tipElement = document.createElement("p");
+  tipElement.textContent = `🌱 Climate Tip: ${tip}`;
+  tipElement.style.fontStyle = "italic";
+  
+  // Append the tip paragraph to the footer
+  footer.appendChild(tipElement);
+}
+
+// Highlight Paragraphs
+function highlightRandomParaGraph() {
+  // Select all paragraph list items
+  const ParaGraph = document.querySelectorAll(".list-group-item");
+
+  // Generate a random index for the paragraph array
+  const randomIndex = Math.floor(Math.random() * ParaGraph.length);
+
+  // Highlight the randomly selected key point
+  ParaGraph[randomIndex].style.backgroundColor = "#d4edda"; // Highlight color
+  Paragraph[randomIndex].style.fontWeight = "bold"; // Make the text bold
+}
+
+// Execute the functions after the DOM content is fully loaded
+document.addEventListener("DOMContentLoaded", () => {
+  displayRandomTip(); // Show a random tip in the footer
+  highlightRandomParaGraph(); // Highlight a random paragraph
+});
+</script>
+
+</body>
+</html>
